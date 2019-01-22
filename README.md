@@ -1,6 +1,10 @@
-# Windows Development Environment Setup Guid
+# Windows Development Environment Setup
 
-This document outlines the steps to setup a Windows Dev Environment. It was tested using [Parallels](https://www.parallels.com/welcome-trial/) on a fresh Windows 10 install.
+This document outlines the steps to setup a clean Windows Dev Environment with some basic tools installed.
+
+All steps taken by the setup script are outlined in the [boxstart script](https://github.com/gtalarico/win-bootstrap/blob/master/boxstarter.ps1)
+
+It was tested using [Parallels](https://www.parallels.com/welcome-trial/) on a fresh Windows 10 install.
 
 ## Configuring the Environment
 
