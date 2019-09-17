@@ -17,7 +17,7 @@ Type `powershell` in the search box, right-click it, and click 'Run as Administr
 From the elevated shell, run the command below to install boxstarter.
 
 ```
-> Set-ExecutionPolicy RemoteSigned; . { iwr -useb http://boxstarter.org/bootstrapper.ps1 } | iex; get-boxstarter -Force
+Set-ExecutionPolicy RemoteSigned; . { iwr -useb http://boxstarter.org/bootstrapper.ps1 } | iex; get-boxstarter -Force
 ```
 
 3. Run setup scripts
