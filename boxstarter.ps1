@@ -1,3 +1,4 @@
+
 # Description: Boxstarter Script
 # Author: Gui Talarico
 # Original boxstarter script by Jesse Frazelle (https://gist.github.com/jessfraz/7c319b046daa101a4aaef937a20ff41f)
@@ -37,11 +38,11 @@ Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtec
 # choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
 
 #--- Tools ---
-choco install cmder
-choco install visualstudio2017community
+#choco install cmder
+#choco install visualstudio2017community
 choco install vscode
 choco install yarn
-choco install procexp
+#choco install procexp
 # choco install jdk8
 # choco install vagrant
 # choco install docker
@@ -264,3 +265,6 @@ Install-WindowsUpdate -acceptEula
 # if ($env:computername -ne $computername) {
 # 	Rename-Computer -NewName $computername
 # }
+
+# Inverse Scrool Whell (macos)
+Get-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Enum\HID\*\*\Device` Parameters FlipFlopWheel -EA 0 | ForEach-Object { Set-ItemProperty $_.PSPath FlipFlopWheel 1 }
